@@ -3,6 +3,7 @@ type: docker
 name: default
 
 steps:
-- name: build
-  commands:
-  - docker build -t alp .
+- name: docker  
+  image: plugins/docker
+  settings:
+    dockerfile: ./Dockerfile
